@@ -3,34 +3,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 В настоящее время анализ программ становится все более важным, так как один из основных способов проверки качества программного обеспечения. В современном мире анализ программ сталкивается с множеством проблем.  Наиболее важными проблемами являются способы повышения полноты и точности анализа.
 
-Program analysis becomes increasingly important nowadays as one of the main
-ways of software quality assurance. Unfortunately, real-world software
-presents a lot of problems for different kinds of program analyses.
-One of the most important problems is how you analyze loops in a given program.
+Классическим подходом к решения данной проблемы в статическом анализе является использование пользовательских спецификаций (контрактов). Использование подобного подхода так же связано с определенными проблемами. Альтернативным подходом, рассматриваемым в данной работе является автоматическое извлечение контрактов из исходного кода.
 
-Every loops represents a potentially exponential number of possible execution
-paths, thus causing an exponential increase in analysis complexity. Moreover,
-some loops cannot be bound statically and represent a possibly infinite number
-of paths. Therefore, to efficiently explore all possible loop paths one has
-to either limit or summarize the execution state space.
+Основной идеей данного подхода является анализ большого количества корректного исходного кода с целью выявления шаблонов вызова различных функций. Целью данной работы является разработка алгоритма автоматического извлечения контрактов для улучшения полноты и точности статического анализа. В рамках работы так же планируется разработка модуля автоматического извлечения контрактов для системы статического анализа Borealis[вставить ссылку].
 
-In this paper we present an original approach to loop analysis that reinforces
-traditional loop unrolling with what we call ``loop backstabbing''. It analyzes
-a given loop not only on the first $N$ iterations, but also on some arbitrary
-iterations $I_1, I_2, \ldots, I_k$. To do this, we take advantage of the recent
-advances in compilers and leverage existing induction variable and scalar
-evolution analyses. Using them, one can instantiate a loop body on any given
-iteration, thus summarizing possible loop executions. For example, if you
-instantiate the loop body on the last iteration, you can check whether it
-contains ``off-by-one'' errors without the need to do full loop unrolling.
+Работа состоит из 5 разделов. В разделе 1 рассматриваются существующие исследования в области автоматического извлечения контрактов. Проводится анализ существующих алгоритмов, определяются их основные особенности.
 
-Of course, this approach is only as good as the capabilities of the underlying
-scalar evolution analysis. If it fails to analyze a loop, loop backstabbing
-cannot be applied and we have to fall-back to traditional loop unrolling.
-We implemented loop backstabbing in our prototype bounded model checking tool
-called Borealis and tested it on a number 
-of examples from NECLA and SV-COMP
-benchmarks to measure the efficiency and the applicability of our approach.
-The results show that our approach demonstrates an over 9x increase in
-performance without any loss in analysis quality. About 60\% of the loops
-from our test suite can be successfully analyzed by loop backstabbing.
+Раздел 2 посвящен постановке задачи автоматического извлечения контрактов. Выбирается целевой язык программирования, выбираются ключевые параметры технологии. В этом разделе также ставится задача разработки модуля автоматического извлечения контрактов для системы статического анализа Borealis.
+
+В 3 разделе описывается предлагаемый алгоритм извлечения контрактов. Рассматривается модель представления кода. Рассматриваются особенности алгоритма для описанной модели.
+
+4 раздел посвящен разработке модуля автоматического извлечения контрактов для системы Borealis. Рассматривается структура системы, ее особенности. Описываются особенности реализации созданного алгоритма.
+
+В разделе 5 представлены результаты тестирования созданного модуля. Показывается эффективность описанного подхода. Определяются недостатки описанной технологии и способы их преодоления.
