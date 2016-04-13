@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\intro
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+В настоящее время анализ программ становится все более важным, так как один из основных способов проверки качества программного обеспечения. В современном мире анализ программ сталкивается с множеством проблем.  Наиболее важными проблемами являются способы повышения полноты и точности анализа.
+
+Program analysis becomes increasingly important nowadays as one of the main
+ways of software quality assurance. Unfortunately, real-world software
+presents a lot of problems for different kinds of program analyses.
+One of the most important problems is how you analyze loops in a given program.
+
+Every loops represents a potentially exponential number of possible execution
+paths, thus causing an exponential increase in analysis complexity. Moreover,
+some loops cannot be bound statically and represent a possibly infinite number
+of paths. Therefore, to efficiently explore all possible loop paths one has
+to either limit or summarize the execution state space.
+
+In this paper we present an original approach to loop analysis that reinforces
+traditional loop unrolling with what we call ``loop backstabbing''. It analyzes
+a given loop not only on the first $N$ iterations, but also on some arbitrary
+iterations $I_1, I_2, \ldots, I_k$. To do this, we take advantage of the recent
+advances in compilers and leverage existing induction variable and scalar
+evolution analyses. Using them, one can instantiate a loop body on any given
+iteration, thus summarizing possible loop executions. For example, if you
+instantiate the loop body on the last iteration, you can check whether it
+contains ``off-by-one'' errors without the need to do full loop unrolling.
+
+Of course, this approach is only as good as the capabilities of the underlying
+scalar evolution analysis. If it fails to analyze a loop, loop backstabbing
+cannot be applied and we have to fall-back to traditional loop unrolling.
+We implemented loop backstabbing in our prototype bounded model checking tool
+called Borealis and tested it on a number 
+of examples from NECLA and SV-COMP
+benchmarks to measure the efficiency and the applicability of our approach.
+The results show that our approach demonstrates an over 9x increase in
+performance without any loss in analysis quality. About 60\% of the loops
+from our test suite can be successfully analyzed by loop backstabbing.
