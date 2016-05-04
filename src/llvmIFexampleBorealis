@@ -1,0 +1,13 @@
+(
+  globals(),
+  .str.global=(37,102,0),
+  cmp=(x < 0)
+)->(BEGIN
+<OR>(
+  @P cmp=true
+),
+<OR>(
+  @P cmp=false
+  //call sqrt(x)
+)
+END)
