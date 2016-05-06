@@ -11,4 +11,5 @@ texlive-latex-base
 texlive-latex-extra
 texlive-latex-recommended
 texlive-pictures
+texlive-science
 ```
