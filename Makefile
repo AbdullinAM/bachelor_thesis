@@ -14,3 +14,6 @@ bib:
 nomenclature:
 	makeindex thesis.nlo -s nomencl.ist -o thesis.nls
 
+clean:
+	rm *.pdf
+
