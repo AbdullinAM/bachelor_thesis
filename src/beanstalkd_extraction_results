@@ -1,0 +1,59 @@
+---Function readdir---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function closedir---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function warn_systemd_ignored_option---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function parse_size_t---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function reserve_job---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function connclose---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function remove_this_reserved_job---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function reply_job---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function bind---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function store_job---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)

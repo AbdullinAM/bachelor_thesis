@@ -1,0 +1,379 @@
+---Function fts_set---
+State:
+(
+  @P (arg$1 == <nullptr>)=false,
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function getgrgid_r---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function getpwuid_r---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function BIO_ctrl---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function X509_PUBKEY_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function X509_sign---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ssl_x509_v3ext_add---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function X509_set_pubkey---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function X509_set_issuer_name---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function X509_set_version---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function DH_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function bind---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function logger_print_freebuf---
+State:
+(
+  @P (arg$3 == <nullptr>)=false
+)
+
+---Function ERR_func_error_string---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function logger_join---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ERR_lib_error_string---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function SSL_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ssl_wildcardify---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ssl_x509_fingerprint---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function pxy_http_resphdr_filter_line---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function log_content_submit---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function evbuffer_add_printf---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function cachetgcrt_mkkey---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function SSL_ctrl---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function SSL_CTX_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function SSL_new---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ssl_session_is_valid---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function logbuf_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function thrqueue_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function event_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function logbuf_new_printf---
+State:
+(
+  @P (arg$3 == <nullptr>)=false
+)
+
+---Function evdns_base_new---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function fts_read---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function logger_submit---
+State:
+(
+  @P (arg$3 == <nullptr>)=false
+)
+
+---Function fread---
+State:
+(
+  @P (arg$3 == <nullptr>)=false
+)
+
+---Function SSL_SESSION_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function EVP_PKEY_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function nat_ipv6ready---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function BIO_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function logger_leave---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function proxy_listener_ctx_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function pxy_sslctx_setoptions---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ERR_reason_error_string---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function evdns_base_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function PEM_write_PrivateKey---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function X509_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function X509_check_private_key---
+State:
+(
+  @P ((arg$1 == <nullptr>) | (!((arg$1 == <nullptr>)) & !((arg$0 == <nullptr>))))=true,
+  @P ((arg$0 == <nullptr>) | (((arg$0 == <nullptr>) | !((arg$0 == <nullptr>))) & !((arg$1 == <nullptr>))))=true
+)
+
+---Function ssl_x509_subject---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function nat_getlookupcb---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ftell---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function fclose---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function strncat---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function nat_getsocketcb---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function proxyspec_str---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function cachetgcrt_mkval---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function gai_strerror---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function event_base_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function pxy_http_reqhdr_filter_line---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function X509_NAME_get_text_by_NID---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function logger_start---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function logger_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function logger_reopen---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function SSL_get_error---
+State:
+(
+  @P (arg$1 < 1)=true
+)

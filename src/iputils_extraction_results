@@ -1,0 +1,197 @@
+---Function ioctl---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function fclose---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function connect---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function connect---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function gai_strerror---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function bind---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function gai_strerror---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function connect---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function cap_get_flag---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function check_device_by_ioctl---
+State:
+(
+  @P (arg$0 < 0)=false
+)
+
+---Function cap_set_proc---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function cap_set_flag---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ioctl---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function closedir---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function readdir---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ioctl---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function bind---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function gai_strerror---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function __cmsg_nxthdr---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function cap_set_proc---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function cap_set_flag---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function bind---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function ping4_run---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function ping6_run---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function cap_get_flag---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function connect---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function ioctl---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function probe_ttl---
+State:
+(
+  @P (arg$0 < 0)=false
+)
+
+---Function gai_strerror---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function __cmsg_nxthdr---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function probe_ttl---
+State:
+(
+  @P (arg$0 < 0)=false
+)
+
+---Function gai_strerror---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function __cmsg_nxthdr---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
