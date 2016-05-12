@@ -1,0 +1,29 @@
+---Function readdir---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function __cmsg_nxthdr---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function ping4_run---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function ping6_run---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function probe_ttl---
+State:
+(
+  @P (arg$0 < 0)=false
+)
