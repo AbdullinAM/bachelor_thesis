@@ -1,0 +1,730 @@
+---Function fclose---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ungetc---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function split_cmdline_strerror---
+State:
+(
+  @P (arg$0 < 0)=true
+)
+
+---Function string_list_append_nodup---
+State:
+(
+  @P (arg$1 == <nullptr>)=true
+)
+
+---Function write_branch_report---
+State:
+(
+  @P (arg$1 == <nullptr>)=false,
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function st_mult---
+State:
+(
+  @P (arg$1 == 8192)=false
+)
+
+---Function string_list_lookup---
+State:
+(
+  @P (arg$0 == <nullptr>)=true
+)
+
+---Function string_list_insert---
+State:
+(
+  @P (arg$0 == <nullptr>)=true
+)
+
+---Function do_cache---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function serve_cache_loop---
+State:
+(
+  @P (arg$0 < 0)=false
+)
+
+---Function xfdopen---
+State:
+(
+  @P (arg$0 < 0)=false
+)
+
+---Function parse_rev_note---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function handle---
+State:
+(
+  @P (arg$0 < 0)=false
+)
+
+---Function gai_strerror---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function bind---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function verify_pack_index---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function curl_easy_strerror---
+State:
+(
+  @P (arg$0 == 0)=false
+)
+
+---Function lseek64---
+State:
+(
+  @P (arg$0 < 0)=false
+)
+
+---Function fwrite_sha1_file---
+State:
+(
+  @P (arg$2 > 0)=true
+)
+
+---Function release_object_request---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function abort_http_object_request---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function curl_easy_cleanup---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function finish_http_pack_request---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function release_http_pack_request---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function new_http_pack_request---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function curl_multi_remove_handle---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function http_opt_request_remainder---
+State:
+(
+  @P (arg$1 > 0)=true
+)
+
+---Function ewah_each_bit---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function approxidate_relative---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function parse_date---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function approxidate_str---
+State:
+(
+  @P *(arg$0)=not(45|43),
+  @P *(arg$0)=not(0|10)
+)
+
+---Function mktime---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function git_deflate_bound---
+State:
+(
+  @P (arg$1 +> 1024)=true
+)
+
+---Function finish_active_slot---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function extract_param---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function handle_line---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function format_commit_message---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function print_commit---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function fgets---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function hashmap_get_next---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function ftruncate64---
+State:
+(
+  @P (arg$0 < 0)=false
+)
+
+---Function update_url_from_redirect---
+State:
+(
+  @P (arg$0 == <nullptr>)=false,
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function refresh_lock---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function unlock_remote---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function release_active_slot---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function init_curl_proxy_auth---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function set_curl_keepalive---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function missing__target---
+State:
+(
+  @P (arg$1 == 0)=false
+)
+
+---Function extract_content_type---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function get_sha1---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function mmap64---
+State:
+(
+  @P (arg$4 < 0)=false
+)
+
+---Function connect---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function SSL_get_error---
+State:
+(
+  @P (arg$1 < 1)=true
+)
+
+---Function imap_store_msg---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function SSL_free---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function append_msgs_to_imap---
+State:
+(
+  @P (arg$2 == 0)=false
+)
+
+---Function parse_next_sha1---
+State:
+(
+  @P (arg$4 == <nullptr>)=false
+)
+
+---Function name_parent---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function get_ours_cache_pos---
+State:
+(
+  @P (arg$1 < 0)=true
+)
+
+---Function show_one---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function update---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function should_process_cmd---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function add_commit_patch_id---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function show_result_list---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function try_merge_strategy---
+State:
+(
+  @P (!((arg$2 == <nullptr>)) | (!((arg$2 == <nullptr>)) & !((arg$2 == <nullptr>))))=true,
+  @P (arg$3 == <nullptr>)=false
+)
+
+---Function get_merge_bases---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function buffer_is_binary---
+State:
+(
+  @P (arg$1 +> 1072693248)=false
+)
+
+---Function check_object3563---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function verify_pack---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function record_person---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function hashcmp3333---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function find_unresolved_deltas_1---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function read_shell_var---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function closedir---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function strbuf_getwholeline_fd---
+State:
+(
+  @P (arg$1 < 0)=false
+)
+
+---Function check_aliased_update---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function split_blame---
+State:
+(
+  @P (arg$3 == <nullptr>)=false
+)
+
+---Function drop_origin_blob---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function find_pack_entry_one---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function found_guilty_entry---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function pass_blame---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function name_rev_line---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function get_next_line---
+State:
+(
+  @P (arg$0 +< arg$1)=true
+)
+
+---Function register_commit_graft---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function parse_fragment---
+State:
+(
+  @P (arg$1 +> 4)=true
+)
+
+---Function add_pack---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function ref_transaction_create---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function fmt_tag_signature---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function copy_templates_1---
+State:
+(
+  @P (arg$2 == <nullptr>)=false
+)
+
+---Function try_delta---
+State:
+(
+  @P (arg$2 < 1)=false
+)
+
+---Function split_one---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function add_pack_file---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function readdir64---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function transport_update_tracking_ref---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function apply_one_fragment---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function open_pack_index---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function close_istream---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function work_done---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function cmp_two_packs---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function show_mode_change---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function show_stats---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function write_out_one_result---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function fscanf---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function copy_note_for_rewrite---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function check_patch---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function register_symlink_changes---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function check_whitespace---
+State:
+(
+  @P (arg$1 == 0)=false
+)
+
+---Function finish_copy_notes_for_rewrite---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function hashcpy3332---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function describe_one_orphan---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function show_worktree_porcelain---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function show_worktree---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function mark_in_pack_object---
+State:
+(
+  @P (arg$1 == <nullptr>)=false
+)
+
+---Function check_branch_commit---
+State:
+(
+  @P (!((arg$5 == 0)) | ((arg$5 == 0) & !((arg$3 == <nullptr>))))=true,
+  @P ((arg$4 == 4) | (arg$4 == 8))=true
+)
+
+---Function show_diff---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function check_object4892---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function nth_packed_object_sha1---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function check_argc---
+State:
+(
+  @P (((arg$0 == 1) | (arg$0 == 2)) | (arg$0 == 3))=true
+)
+
+---Function create_delta---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function split_mbox---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
+
+---Function update_local_ref---
+State:
+(
+  @P (arg$0 == <nullptr>)=false
+)
