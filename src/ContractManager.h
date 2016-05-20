@@ -30,12 +30,6 @@ class ContractManager : public llvm::ModulePass {
 
 public:
 
-    struct Summary{
-        llvm::Function* func;
-        PredicateStateImply::Ptr state;
-        Summary(llvm::Function* F, PredicateStateImply::Ptr S): func(F), state(S) {}
-    };
-
     static char ID;
     //magic numbers
     constexpr static double MERGING_CONSTANT = 0.68;
@@ -53,8 +47,6 @@ public:
     void addContract(llvm::Function* F, FunctionManager& FM, PredicateState::Ptr S,
                      const std::unordered_map<int, Args>& mapping);
 
-    void addSummary(llvm::Function* F, PredicateStateImply::Ptr S, FunctionManager& FM);
-
 private:
 
     void saveState(FunctionIdentifier::Ptr func, PredicateState::Ptr state);
@@ -62,7 +54,6 @@ private:
 
     void printContractsDump() const;
     void printContracts() const;
-    void printSummaries() const;
 
     void syncWithDB();
     ContractContainer::Ptr readFromDB();
@@ -75,7 +66,6 @@ private:
 
     static ContractContainer::Ptr contracts;
     static FunctionInfo functionInfo;
-    static std::vector<Summary> summaries;
 
     FactoryNest FN;
 
