@@ -1,29 +1,29 @@
----Function readdir---
+---Function probe_ttl---
+State:
+(
+  @P (arg$0 < 0)=false
+)
+
+---Function bind---
+State:
+(
+  @P (arg$0 == 4294967295)=false
+)
+
+---Function event_free---
 State:
 (
   @P (arg$0 == <nullptr>)=false
 )
 
----Function __cmsg_nxthdr---
+---Function work_done---
 State:
 (
-  @P (arg$1 == <nullptr>)=false
+  @P (arg$0 == <nullptr>)=false
 )
 
----Function ping4_run---
+---Function store_job---
 State:
 (
-  @P (arg$2 == <nullptr>)=false
-)
-
----Function ping6_run---
-State:
-(
-  @P (arg$2 == <nullptr>)=false
-)
-
----Function probe_ttl---
-State:
-(
-  @P (arg$0 < 0)=false
+  @P (arg$0 == <nullptr>)=false
 )
