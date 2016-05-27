@@ -132,7 +132,7 @@ LevelDB имеет один недостаток: она не поддержив
 
 Кроме того, были разработаны два LLVM прохода: \texttt{ContractManager} и \texttt{ContractSummaryPass}. \texttt{ContractManager} является основным классом модуля. Он реализован в виде \texttt{ModulePass}. В нем хранятся все результаты анализа. Класс \texttt{ContractManager} реализует следующие методы:
 \begin{itemize}
-\item \texttt{void addContract(llvm::Function* F, FunctionManager\& FM, PredicateState::Ptr S, const std::unordered_map<int, Args>\& mapping)} --- добавить контракт для функции. Метод выполняет унификацию аргументов функции в PS, удаляет из него полные группы предикатов и сохраняет его;
+\item \texttt{void addContract(llvm::Function* F, FunctionManager\& FM, PredicateState::Ptr S, const std::unordered_map <int, Args>\& mapping)} --- добавить контракт для функции. Метод выполняет унификацию аргументов функции в PS, удаляет из него полные группы предикатов и сохраняет его;
 \item \texttt{void saveState(FunctionIdentifier::Ptr func, PredicateState::Ptr state)} --- сохранить PS в \texttt{ContractContainer};
 \item \texttt{Term::Ptr stateToTerm(PredicateState::Ptr state) const} --- преобразовать входной PS в Term. В общем случае такое преобразование невозможно, однако благодаря тому, что в виде контрактов извлекаются только предикаты равенства, любой PS в \texttt{ContractManager}'е можно преобразовать в Term. Эта операция используется для трансформации \texttt{PredicateStateChoice} в один предикат пути для возможности его сравнения с остальными результатами;
 \item \texttt{void applyContracts() const} --- в методе выполняется слияние контрактов, печать полученных предусловий в файл и добавление их в систему для проверки;
