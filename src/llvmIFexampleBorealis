@@ -4,10 +4,14 @@
   cmp=(x < 0)
 )->(BEGIN
 <OR>(
-  @P cmp=true
+  @P cmp=true,
+  retval.0=0
 ),
 <OR>(
-  @P cmp=false
-  //call sqrt(x)
+  @P cmp=false,
+  //call=sqrt(x)
+  retval.0=call
 )
-END)
+END)->(
+  \result_foo=retval.0
+)
